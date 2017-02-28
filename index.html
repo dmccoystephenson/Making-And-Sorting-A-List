@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Chapter 5, Exercise 2</title>
+	</head>
+	<body>
+		<script>
+			var input = "donkey";
+			
+			var listOfNames = [];
+			
+			while (input != "") {
+				input = prompt("Enter a name! Stop entering names when your list is complete.");
+				
+				listOfNames.push(input);
+			}
+			
+			listOfNames.sort();
+			
+			document.write("<h1>Here is your list of names in alphabetical order:</h1>");
+			document.write("<h2>" + listOfNames.join("<br />") + "</h2>");
+		</script>
+	</body>
+</html>
